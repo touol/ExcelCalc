@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model package="excelcalc" baseClass="xPDOObject" platform="mysql" defaultEngine="InnoDB" phpdoc-package="excelcalc"
+       version="1.1">
+    <object class="ExcelCalcBook" table="excelcalc_workbooks" extends="xPDOSimpleObject">
+        <field key="name" dbtype="varchar" precision="255" phptype="string" null="false" default=""/>
+        <field key="workbook" dbtype="text" phptype="string" null="true" default=""/>
+    </object>
+</model>
