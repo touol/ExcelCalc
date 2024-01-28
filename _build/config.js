@@ -1,7 +1,7 @@
 export default {
     name:"ExcelCalc",
     name_lower:"excelcalc",
-    version:"1.0.0",
+    version:"1.0.3",
     release:"beta",
     schema:true,
     update:{

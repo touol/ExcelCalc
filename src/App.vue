@@ -1,7 +1,7 @@
 <template>
 	<div class="card">
     <Splitter  class="mb-5">
-      <SplitterPanel class="flex flex-column" :size="25">
+      <SplitterPanel class="flex flex-column" :size="10">
         <Toolbar class="p-mb-4 excel-toolbar">
           <template #start>
             <Button label="Новый" 
@@ -13,7 +13,7 @@
         <Menu :model="items" class="excel-calc-list"/>
         
       </SplitterPanel>
-      <SplitterPanel class="flex flex-column" :size="75"> 
+      <SplitterPanel class="flex flex-column" :size="90"> 
         <ExcelWorkbook v-model="EWBData" v-show="ExcelWorkbookvisible"/>
       </SplitterPanel>
     </Splitter>

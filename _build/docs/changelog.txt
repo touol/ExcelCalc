@@ -2,3 +2,4 @@ Changelog for ExcelCalc.
 1.0.0-beta
 ==============
 - init.
+- onfocus select.

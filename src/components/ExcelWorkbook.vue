@@ -38,8 +38,8 @@
         </template>
         <template #editor="{ data, field }">
           <template v-if="field != 'id'">
-            <InputText v-if="data[field].f" v-model="data[field].f" />
-            <InputText v-else v-model="data[field].v" />
+            <InputText v-if="data[field].f" v-model="data[field].f" onfocus="this.select()"/>
+            <InputText v-else v-model="data[field].v" onfocus="this.select()"/>
           </template>
           <template v-else>
             {{ data[field].v }}
