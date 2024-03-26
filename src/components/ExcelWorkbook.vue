@@ -192,30 +192,7 @@
       genlineItems(workbook.Sheets.Sheet1);
     }
   };
-  const loadLazyData = (event) => {
-    loading.value = true;
-    // lazyParams.value = { ...lazyParams.value, first: event?.first || first.value };
-    // // console.log('lazyParams.value',lazyParams.value)
-    // // console.log('event',event)
-    // let params = { 
-    //   limit: 10, 
-    //   setTotal: 1, 
-    //   offset:lazyParams.value.first,
-    //   sortField:lazyParams.value.sortField,
-    //   sortOrder:lazyParams.value.sortOrder,
-    // }
-    axios.get(point,{ params: params})
-    .then(function (response) {
-      // console.log(response.data);
-      // console.log(response.status);
-      // console.log(response.statusText);
-      // console.log(response.headers);
-      // console.log(response.config);
-      // lineItems.value = response.data.rows;
-      // totalRecords.value = response.data.total;
-      loading.value = false;
-    });
-  };
+
 
   const menu = ref();
   const items = ref([

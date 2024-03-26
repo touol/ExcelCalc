@@ -74,7 +74,7 @@
     .then(function (response) {
       // console.log(response.data);
       items.value = [];
-      response.data.rows.forEach((workbook) => {
+      response.data.data.rows.forEach((workbook) => {
         workbook.label = workbook.name;
         workbook.command = (e) => {
           // console.log(e.item.id);

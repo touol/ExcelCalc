@@ -3,3 +3,4 @@ Changelog for ExcelCalc.
 ==============
 - init.
 - onfocus select.
+- Приведение дефаулт контролера к табле.
